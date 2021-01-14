@@ -9,12 +9,18 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^1.1.4",
+    "@craco/craco": "^6.0.0",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^10.2.1",
     "framer-motion": "^3.2.1",
     "next": "10.0.5",
+    "postcss": "^8.2.4",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-responsive-animate-navbar": "^1.1.8",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
