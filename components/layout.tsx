@@ -1,7 +1,7 @@
-import { Nav } from 'react-bootstrap';
 import layoutStyles from '../styles/Home.module.css';
 
 import Navbar from './navbar';
+import Footer from './footer';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -10,9 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <main>{children}</main>
 
-      <footer className={layoutStyles.footer}>
-        <p>place holder footer</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
