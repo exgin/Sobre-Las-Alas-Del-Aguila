@@ -3,8 +3,8 @@ import styles from '../styles/Home.module.css';
 
 import Layout from '../components/layout';
 
-import { Image, Box } from '@chakra-ui/react';
-import test from '../images/test.jpg';
+import { Box } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <h1 className={styles.title}>Sobre Las Alas Del Aguila</h1>
 
         <Box boxSize='sm'>
-          <Image src={test} alt='test img' />
+          <Image src='/test.jpg' alt='test img' width='64' height='64' />
         </Box>
       </main>
     </Layout>
