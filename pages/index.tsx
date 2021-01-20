@@ -3,9 +3,6 @@ import styles from '../styles/Home.module.css';
 
 import Layout from '../components/layout';
 
-import { Box } from '@chakra-ui/react';
-import Image from 'next/image';
-
 export default function Home() {
   return (
     <Layout>
@@ -14,12 +11,16 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Sobre Las Alas Del Aguila</h1>
+      <div>
+        <h1 className={styles.title}>Hero img / text</h1>
 
-        <Box boxSize='sm'>
-          <Image src='/test.jpg' alt='test img' width='64' height='64' />
-        </Box>
+        <span className={styles.photoText}></span>
+      </div>
+
+      <hr />
+
+      <main className={styles.main}>
+        <p>content of page</p>
       </main>
     </Layout>
   );
