@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 /* FontAwesome imports */
 import fontawesome from '@fortawesome/fontawesome';
@@ -15,7 +16,7 @@ export default function Navbar() {
       <nav className='relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg '>
         <div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
           <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
-            <a className='text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase' href='#pablo'>
+            <a className='text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase' href='/'>
               Sobre Las Alas Del Aguila
             </a>
 
@@ -31,10 +32,14 @@ export default function Navbar() {
           <div className={'lg:flex flex-grow items-center' + (navbarOpen ? 'flex' : 'hidden')}>
             <ul className='flex flex-col lg:flex-row list-none lg:m1-auto'>
               <li className='nav-item'>
-                <a className='px-3 py-2 flex items-center'>DONATE NOW</a>
+                <Link href='/pages/donate'>
+                  <a className='px-3 py-2 flex items-center'>DONATE NOW</a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a className='px-3 py-2 flex item-center'>ABOUT US</a>
+                <Link href='/pages/about'>
+                  <a className='px-3 py-2 flex item-center'>ABOUT US</a>
+                </Link>
               </li>
             </ul>
           </div>
