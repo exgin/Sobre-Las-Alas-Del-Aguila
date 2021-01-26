@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className='container mx-auto'>
       <Navbar />
 
-      <main className=''>{children}</main>
+      <main>{children}</main>
 
       <Footer />
     </div>
