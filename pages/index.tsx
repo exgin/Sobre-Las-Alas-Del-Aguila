@@ -12,10 +12,10 @@ export default function Home() {
       </Head>
 
       <div className='relative'>
-        <div className='absolute top-10 right-12 text-2x1 text-red-800 bg-blue-400'>
-          Sobre Las Alas Del Aguila aids families in this living condtion around the clock
+        <div className={styles.heroText}>
+          <div className='text-blue-500'>Sobre Las Alas Del Aguila</div>&nbsp;aids families in this living condtion around the clock.
         </div>
-        <img src='/homeT.JPG' alt='' />
+        <img className={styles.heroImg} src='/homeT.JPG' alt='' />
       </div>
 
       <div className='w-full'>
@@ -28,12 +28,12 @@ export default function Home() {
 
           <div className='w-48 m-5 shadow-lg'>
             <p className='mx-2 py-2 text-center'>Freedom</p>
-            <img src='/house.JPG' alt='' />
+            <img className={styles.cardPic} src='/house.JPG' alt='cardpic' />
           </div>
 
           <div className='w-48 m-5 shadow-lg'>
             <p className='mx-2 py-2 text-center'>Hope</p>
-            <img src='/hope.JPG' alt='' />
+            <img className={styles.cardPic} src='/kid1.JPG' alt='cardpic' />
           </div>
         </div>
       </div>

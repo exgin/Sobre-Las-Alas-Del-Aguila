@@ -7,6 +7,28 @@
   align-items: center;
 }
 
+.heroText {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  z-index: 1;
+}
+
+.heroImg {
+  filter: brightness(50%);
+}
+
+.cardPic {
+  height: 256px;
+  width: 192px;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;

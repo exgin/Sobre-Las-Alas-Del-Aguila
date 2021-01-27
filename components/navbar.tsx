@@ -18,7 +18,9 @@ export default function Navbar() {
       <nav className='relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg'>
         <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
           <div className='flex'>
-            <img src='/logo.JPG' alt='logo' className='w-6/12' />
+            <a href='/'>
+              <img src='/logo.JPG' alt='logo' className='w-6/12' />
+            </a>
           </div>
 
           <button
