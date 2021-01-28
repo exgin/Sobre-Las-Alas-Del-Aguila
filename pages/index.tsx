@@ -3,6 +3,9 @@ import styles from '../styles/Home.module.css';
 
 import Layout from '../components/layout';
 
+import CountUp from 'react-countup';
+import { Controller, Scene } from 'react-scrollmagic';
+
 export default function Home() {
   return (
     <Layout>
@@ -39,6 +42,7 @@ export default function Home() {
       </div>
 
       <div>
+        {/* add scroll magic along with countUp here */}
         <p>Feeding 10,000 children a day. Needing 7 containers a food, $7,000 per container</p>
         <p>500 churches built </p>
         <p>It cost $10,000 per house to be built</p>
